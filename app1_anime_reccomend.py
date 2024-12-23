@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import fsspec
 
 # Load the precomputed similarity model and anime dataset
 cosine_sim = pickle.load(open('readme.md', 'rb'))  # Replace with your similarity file
