@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the precomputed similarity model and anime dataset
-cosine_sim = pickle.load(open('anime_similarity.pkl', 'rb'))  # Replace with your similarity file
+cosine_sim = pickle.load(open('readme.md', 'rb'))  # Replace with your similarity file
 anime_df = pickle.load(open('anime_data.pkl', 'rb'))  # Replace with your anime dataset file
 
 # Streamlit App Title
