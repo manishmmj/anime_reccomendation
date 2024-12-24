@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from google.colab import drive
+drive.mount('https://drive.google.com/file/d/12inLzbTbbKFGKXdCMZrZWb65HwWRExo6/view?usp=drive_link')
+
+# Access files using the mounted path
+with open('/https://drive.google.com/file/d/12inLzbTbbKFGKXdCMZrZWb65HwWRExo6/view?usp=drive_link.txt', 'r') as file:
+    anime_similarity = file.read()
+    
+# https://drive.google.com/file/d/12inLzbTbbKFGKXdCMZrZWb65HwWRExo6/view?usp=drive_link
 
 # Load the precomputed similarity model and anime dataset
 cosine_sim = pickle.load(open('anime_similarity.pkl', 'rb'))  # Replace with your similarity file
