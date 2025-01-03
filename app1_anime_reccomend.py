@@ -7,7 +7,7 @@ import pickle
 # https://drive.google.com/file/d/12inLzbTbbKFGKXdCMZrZWb65HwWRExo6/view?usp=drive_link
 
 # Load the precomputed similarity model and anime dataset
-anime_df = pickle.load(open('anime_data.pkl', 'rb'))  # Replace with your anime dataset file
+anime_df = joblib.load(open('anime_data.pkl', 'rb'))  # Replace with your anime dataset file
 
 # Streamlit App Title
 st.title("Anime Recommendation System")
