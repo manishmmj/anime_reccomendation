@@ -12,7 +12,7 @@ anime_df = joblib.load(open('anime_data.pkl', 'rb'))  # Replace with your anime 
 
 # Train content-based model using anime descriptions
 tfidf = TfidfVectorizer(stop_words='english')
-anime_tfidf = tfidf.fit_transform(anime_df['description'])
+anime_tfidf = tfidf.fit_transform(anime_df['genre'])
 cosine_sim = cosine_similarity(anime_tfidf, anime_tfidf)
 
 # Streamlit App Title
