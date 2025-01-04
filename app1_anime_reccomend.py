@@ -9,6 +9,11 @@ import joblib
 # Load the precomputed similarity model and anime dataset
 anime_df = joblib.load(open('anime_data.pkl', 'rb'))  # Replace with your anime dataset file
 
+# Train content-based model using anime descriptions
+tfidf = TfidfVectorizer(stop_words='english')
+anime_tfidf = tfidf.fit_transform(anime_df['description'])
+cosine_sim = cosine_similarity(anime_tfidf, anime_tfidf)
+
 # Streamlit App Title
 st.title("Anime Recommendation System")
 
