@@ -41,7 +41,7 @@ if st.button('Recommend Anime'):
         sim_scores = sim_scores[1:n_recommendations + 1]
         anime_indices = [i[0] for i in sim_scores]
         
-        return anime_df[['Title', 'Genre', 'Type', 'Episodes', 'Rating']].iloc[anime_indices]
+        return anime_df[['anime_id','name', 'genre', 'type', 'episodes', 'rating']].iloc[anime_indices]
 
     # Generate Recommendations
     recommendations = recommend_anime(selected_anime, num_recommendations)
