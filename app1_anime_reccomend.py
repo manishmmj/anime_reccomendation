@@ -8,6 +8,7 @@ import joblib
 
 # Load the precomputed similarity model and anime dataset
 anime_df = joblib.load(open('anime_data.pkl', 'rb'))  # Replace with your anime dataset file
+anime_sim = joblib.load(open('anime_similarity.pkl', 'rb')) 
 
 # Streamlit App Title
 st.title("Anime Recommendation System")
