@@ -17,7 +17,6 @@ An intelligent recommendation system that suggests anime based on user preferenc
 3. [Dataset](#dataset)
 4. [Technologies Used](#technologies-used)
 5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Installation
 
@@ -36,7 +35,7 @@ An intelligent recommendation system that suggests anime based on user preferenc
    - Create a `.env` file in the root directory.
    - Add the following variables:
      ```env
-     API_KEY=
+     API_KEY= app.py
      DB_URL=your_database_url_here
      ```
 
@@ -82,7 +81,7 @@ Contributions are welcome! Please follow these steps:
 1. Fork the repository.
 2. Create a new branch:
    ```bash
-   git checkout -b feature/your-feature-name
+   git checkout -b  manishmmj/anime_reccomendation
    ```
 3. Commit your changes:
    ```bash
@@ -90,13 +89,9 @@ Contributions are welcome! Please follow these steps:
    ```
 4. Push to your branch:
    ```bash
-   git push origin feature/your-feature-name
+   git push origin manishmmj/anime_reccomendation
    ```
 5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -106,11 +101,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-### Notes
-
-- Replace the placeholders (e.g., `your-username`, `your-dataset-file-id`) with actual values before publishing.
-- Test the instructions to ensure they are accurate and user-friendly.
-
-Feel free to reach out if you have questions or suggestions!
 
 
