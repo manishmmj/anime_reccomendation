@@ -35,8 +35,8 @@ An intelligent recommendation system that suggests anime based on user preferenc
    - Create a `.env` file in the root directory.
    - Add the following variables:
      ```env
-     API_KEY= app.py
-     DB_URL=your_database_url_here
+     API_KEY= app1_anime_reccomend.py
+     DB_URL=anime_data.pkl
      ```
 
 4. Run the application:
